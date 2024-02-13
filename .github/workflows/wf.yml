@@ -3,7 +3,7 @@ name: Run Script from Another Repository
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   run-script:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository 1
         uses: actions/checkout@v2
         with:
-          repository: username/repository1  # Replace with the repository containing the script
+          repository: Raj-inventyv/sh_repo # Replace with the repository containing the script
           ref: main  # Replace with the branch or tag containing the script
 
       - name: Execute Script
